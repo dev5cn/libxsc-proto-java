@@ -23,9 +23,29 @@
 	</build>
 	<dependencies>
 		<dependency>
+			<groupId>com.google.protobuf</groupId>
+			<artifactId>protobuf-java</artifactId>
+			<scope>compile</scope>
+			<version>3.5.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.protobuf</groupId>
+			<artifactId>protobuf-java-util</artifactId>
+			<scope>compile</scope>
+			<version>3.5.1</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<scope>compile</scope>
+			<version>1.2.17</version>
+		</dependency>
+		<dependency>
 			<groupId>libmisc-java</groupId>
 			<artifactId>libmisc-java</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>${pom.basedir}/../libmisc-java/target/libmisc-java-0.0.1-SNAPSHOT.jar</systemPath>
 		</dependency>
 	</dependencies>
 </project>

@@ -140,7 +140,8 @@ public class XscProtoPdu
 		}
 		byte by[] = new byte[size];
 		System.arraycopy(reserved, 0, by, 0, reserved.length);
-		System.arraycopy(xtph.buff, xtph.rm, by, reserved.length, sizeh);
+		if (xtph != null)
+			System.arraycopy(xtph.buff, xtph.rm, by, reserved.length, sizeh);
 		System.arraycopy(xtp.buff, xtp.rm, by, reserved.length + sizeh, sizet);
 		return by;
 	}
